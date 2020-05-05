@@ -1,18 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Круизы в Антарктик">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Круизы в Антарктику</title>
-  <link rel="preload" href="fonts/montserrat-400.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat-500.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat-600.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat-700.woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-  <h1>Круизы в Антарктику</h1>
-</body>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Круизы в Антарктик">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Круизы в Антарктику</title>
+    <link rel="preload" href="fonts/montserrat-400.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-500.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-600.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+  </head>
+
+  <body>
+    <div style="display: none">
+      <include src="build/img/sprite_auto.svg"></include>
+    </div>
+    <header class="main-header">
+      <div class="main-header__inner">
+        <div class="main-header__item">
+          <a class="main-header__logo">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="img/logo-md.svg">
+              <img src="img/logo-lg.svg" alt="логотип">
+            </picture>
+          </a>
+          <a class="main-header__logo-sm">
+            <span class="visually-hidden">Логотип</span>
+            <svg width="42" height="22">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logo-sm"></use>
+            </svg>
+          </a>
+          <button class="burger" type="button" aria-label="Показать главное меню" title="Открыть">
+            <span>Показать главное меню</span>
+          </button>
+        </div>
+        <nav class="main-header__main-nav main-nav">
+          <ul class="list-reset main-nav__list">
+            <li class="main-nav__item main-nav__item--features">
+              <a class="main-nav__link" href="#">Преимущества</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Направления</a>
+            </li>
+            <li class="main-nav__item main-nav__item--cruises">
+              <a class="main-nav__link" href="#">Ближайшие Круизы</a>
+            </li>
+            <li class="main-nav__item main-nav__item--contacts">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script src="js/main/menu.js"></script>
+  </body>
+
 </html>
