@@ -65,6 +65,8 @@
 }
 
 .js .burger--close span {
+  width: 85%;
+
   transition: background 0.3s 0s;
 
   background: transparent;
@@ -72,6 +74,9 @@
   &::before,
   &::after {
     top: 0;
+    left: 5px;
+
+    width: 85%;
 
     transition: top 0.3s, transform 0.3s 0.3s;
 

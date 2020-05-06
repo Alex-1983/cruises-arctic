@@ -11,6 +11,12 @@
   }
 }
 
+.js .main-header {
+  @media (max-width: $screen-sm) {
+    position: absolute;
+  }
+}
+
 .main-header__inner {
   display: flex;
   align-items: center;
@@ -67,8 +73,6 @@
     display: block;
 
     margin-top: 2px;
-
-    outline: 1px solid red; //временно
   }
 }
 
@@ -85,124 +89,10 @@
   fill: $white-dark;
 }
 
-.js .main-header--open .main-header__logo-sm svg {
+.main-header--open .main-header__logo-sm svg {
   fill: $blue-dark;
 }
 
 .main-header__main-nav {
   margin-left: auto;
-  min-width: 630px;
-  max-width: 950px;
-
-  outline: 1px solid red;
-
-  @media (max-width: $screen-md) {
-    min-width: 525px;
-    max-width: 580px;
-  }
-
-  @media (max-width: $screen-sm) {
-    position: relative;
-    top: 0;
-    left: 0;
-
-    padding: 25px 16px 37px;
-    min-width: 100%;
-    max-width: 100%;
-
-    background-color: $white-dark;
-  }
-}
-
-.main-nav__list {
-  display: flex;
-  flex-wrap: wrap;
-
-  margin-left: auto;
-
-  @media (max-width: $screen-sm) {
-    display: flex;
-    flex-direction: column;
-
-    margin: 0;
-  }
-}
-
-.js .main-header__main-nav {
-  @media (max-width: $screen-sm) {
-    display: none;
-  }
-}
-
-.js .main-header--open .main-header__main-nav {
-  @media (max-width: $screen-sm) {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    display: block;
-
-    padding-top: 87px;
-    padding-bottom: 40px;
-  }
-}
-
-.main-nav__item {
-  margin-left: 35px;
-
-  @media (max-width: $screen-md) {
-    margin-left: 23px;
-  }
-
-  @media (max-width: $screen-sm) {
-    margin: 0;
-    margin-bottom: 21px;
-  }
-
-  &--features {
-    @media (max-width: $screen-sm) {
-      order: 1;
-    }
-  }
-
-  &--cruises {
-    @media (max-width: $screen-sm) {
-      order: 2;
-    }
-  }
-
-  &--contacts {
-    @media (max-width: $screen-sm) {
-      order: 3;
-    }
-  }
-}
-
-.main-nav__link {
-  display: block;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-
-  text-decoration: none;
-
-  color: $white-dark;
-  cursor: pointer;
-
-  @media (max-width: $screen-md) {
-    font-size: 14px;
-    line-height: 15px;
-  }
-
-  @media (max-width: $screen-sm) {
-    font-size: 18px;
-    line-height: 22px;
-
-    color: $blue-dark;
-  }
-
-  &:hover {
-    opacity: 0.7;
-  }
 }

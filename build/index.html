@@ -57,7 +57,7 @@
               <a class="main-nav__link" href="#">Направления</a>
             </li>
             <li class="main-nav__item main-nav__item--cruises">
-              <a class="main-nav__link" href="#">Ближайшие Круизы</a>
+              <a class="main-nav__link" href="#">Ближайшие круизы</a>
             </li>
             <li class="main-nav__item main-nav__item--contacts">
               <a class="main-nav__link" href="#">Контакты</a>
@@ -66,6 +66,34 @@
         </nav>
       </div>
     </header>
+    <main class="main-content">
+      <section class="intro">
+        <div class="intro__inner">
+          <div class="intro__text-block">
+            <h1>Круизы&nbsp;<br>в Антарктику</h1>
+            <p>Волшебный мир айсбергов и пингвинов</p>
+          </div>
+        </div>
+      </section>
+      <section class="description">
+        <div class="description__inner">
+          <div class="description__text-block">
+            <h2>Путешествие на край Земли</h2>
+            <p>Это волшебное путешествие поможет вам познакомиться поближе&nbsp;<br>с удивительным миром Антарктики. Наш круизный лайнер отвезет вас&nbsp;<br>на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+          </div>
+          <div class="description__img-wrap">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/description-img-sm@1x.webp, img/description-img-sm@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1365px)" srcset="img/description-img-md@1x.webp, img/description-img-md@2x.webp 2x">
+              <source type="image/webp" srcset="img/description-img-lg@1x.webp, img/description-img-lg@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/description-img-sm@1x.jpg, img/description-img-sm@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/description-img-md@1x.jpg, img/description-img-md@2x.jpg 2x">
+              <img src="img/description-img-lg@1x.jpg" srcset="img/description-img-lg@2x.jpg 2x" width="560" height="301" alt="Фото пингвинов">
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="main-footer">
       <div class="main-footer__inner">
         <div class="main-footer__wrap">
@@ -119,6 +147,9 @@
         </div>
       </div>
     </footer>
+    <script src="js/vendor/picturefill.min.js"></script>
+    <script src="js/vendor/object-fit/ofi.min.js"></script>
+    <script>objectFitImages();</script>
     <script src="js/main/menu.js"></script>
   </body>
 
