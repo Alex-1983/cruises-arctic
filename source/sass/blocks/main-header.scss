@@ -181,6 +181,7 @@
 .main-nav__link {
   display: block;
 
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
 
@@ -191,7 +192,6 @@
 
   @media (max-width: $screen-md) {
     font-size: 14px;
-    font-weight: 500;
     line-height: 15px;
   }
 

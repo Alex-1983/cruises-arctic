@@ -46,7 +46,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: #011c40;
-  background-color: #011c40; }
+  background-color: #f9fbfd; }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -239,6 +239,7 @@ input[type="radio"].visually-hidden {
 
 .main-nav__link {
   display: block;
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -247,7 +248,6 @@ input[type="radio"].visually-hidden {
   @media (max-width: 1023px) {
     .main-nav__link {
       font-size: 14px;
-      font-weight: 500;
       line-height: 15px; } }
   @media (max-width: 767px) {
     .main-nav__link {
@@ -324,3 +324,160 @@ input[type="radio"].visually-hidden {
   .js .burger--close span::after {
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
             transform: rotate3d(0, 0, 1, -45deg); }
+
+.main-footer {
+  background-color: #011c40; }
+
+.main-footer__inner {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 50px 86px 47px;
+  width: 100%;
+  max-width: 1366px; }
+  @media (max-width: 1023px) {
+    .main-footer__inner {
+      padding: 46px 44px 48px; } }
+  @media (max-width: 767px) {
+    .main-footer__inner {
+      padding: 42px 11px 40px; } }
+
+.main-footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 96.9%; }
+  @media (max-width: 1023px) {
+    .main-footer__wrap {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 100%; } }
+  @media (max-width: 767px) {
+    .main-footer__wrap {
+      display: block; } }
+
+.main-footer__logo {
+  margin-right: 40px; }
+  @media (max-width: 1023px) {
+    .main-footer__logo {
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      margin-top: 2px;
+      margin-right: 25px; } }
+  @media (max-width: 767px) {
+    .main-footer__logo {
+      margin: 0;
+      margin-left: 5px;
+      margin-bottom: 23px; } }
+
+.main-footer__logo img {
+  width: 70px;
+  height: 38px; }
+  @media (max-width: 1023px) {
+    .main-footer__logo img {
+      width: 38px;
+      height: 20px; } }
+
+@media (max-width: 767px) {
+  .main-footer__list {
+    margin-bottom: 27px;
+    margin-left: 3px; } }
+
+.main-footer__social {
+  margin-left: auto; }
+  @media (max-width: 1023px) {
+    .main-footer__social {
+      margin-left: 0; } }
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 600px; }
+  @media (max-width: 1023px) {
+    .footer-nav {
+      width: 495px;
+      -webkit-transform: translate(-15px);
+              transform: translate(-15px); } }
+  @media (max-width: 767px) {
+    .footer-nav {
+      display: block;
+      -webkit-transform: none;
+              transform: none;
+      width: auto; } }
+
+.footer-nav__item {
+  margin-right: 32px; }
+  @media (max-width: 1023px) {
+    .footer-nav__item {
+      margin-right: 24px; } }
+  @media (max-width: 767px) {
+    .footer-nav__item {
+      margin-bottom: 17px; } }
+  .footer-nav__item:nth-child(4n) {
+    margin: 0; }
+
+.footer-nav__link {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #f9fbfd; }
+  @media (max-width: 1023px) {
+    .footer-nav__link {
+      font-size: 12px;
+      line-height: 15px; } }
+  .footer-nav__link:hover {
+    opacity: 0.7; }
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 10.2%; }
+  @media (max-width: 1023px) {
+    .social {
+      width: 92px; } }
+  @media (max-width: 767px) {
+    .social {
+      width: 90px; } }
+
+.social__link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer; }
+
+.social__link svg {
+  width: 20px;
+  height: 20px;
+  fill: #f9fbfd; }
+  @media (max-width: 1023px) {
+    .social__link svg {
+      width: 16px;
+      height: 16px; } }
+  .social__link svg:hover {
+    opacity: 0.7; }
