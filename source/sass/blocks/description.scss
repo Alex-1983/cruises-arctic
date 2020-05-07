@@ -1,10 +1,10 @@
 .description {
-  padding-top: 130px;
+  padding-top: 120px;
   padding-bottom: 117px;
 
   @media (max-width: $screen-md) {
     padding-top: 91px;
-    padding-bottom: 95px;
+    padding-bottom: 93px;
   }
 
   @media (max-width: $screen-sm) {
@@ -65,7 +65,7 @@
   }
 
   @media (max-width: $screen-sm) {
-    margin-bottom: 27px;
+    margin-bottom: 24px;
     width: auto;
   }
 }
@@ -100,7 +100,8 @@
   margin-left: auto;
 
   @media (max-width: $screen-md) {
-    margin-top: 6px;
+    margin-top: 9px;
+    width: 48%;
   }
 
   @media (max-width: $screen-sm) {
@@ -114,13 +115,13 @@
   width: 560px;
   height: 301px;
 
-  font-family: "object-fit: cover";
+  font-family: "object-fit: cover"; /*stylelint-disable*/
 
   object-fit: cover;
   object-position: center;
 
   @media (max-width: $screen-md) {
-    width: 324px;
+    width: 100%;
     height: 264px;
   }
 

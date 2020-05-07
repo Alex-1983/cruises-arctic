@@ -34,11 +34,11 @@
 
   font-size: 0;
 
-  transition: background 0.3s 0.3s;
+  transition: background-color 0.3s 0.3s;
   vertical-align: middle;
 
   color: transparent;
-  background: $white-dark;
+  background-color: $white-dark;
 
   &::before,
   &::after {

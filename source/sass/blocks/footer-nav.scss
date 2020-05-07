@@ -5,8 +5,9 @@
   width: 600px;
 
   @media (max-width: $screen-md) {
-    width: 495px;
-    transform: translate(-15px);
+    width: 450px;
+
+    transform: translate(-37px);
   }
 
   @media (max-width: $screen-sm) {

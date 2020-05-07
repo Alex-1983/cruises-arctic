@@ -5,16 +5,16 @@
 .main-footer__inner {
   margin-right: auto;
   margin-left: auto;
-  padding: 50px 86px 47px;
+  padding: 48px 70px 47px;
   width: 100%;
   max-width: 1366px;
 
   @media (max-width: $screen-md) {
-    padding: 46px 44px 48px;
+    padding: 46px 33px 48px;
   }
 
   @media (max-width: $screen-sm) {
-    padding: 42px 11px 40px;
+    padding: 42px 10px 37px;
   }
 }
 
@@ -40,18 +40,19 @@
 
 .main-footer__logo {
   margin-right: 40px;
+  padding-left: 15px;
 
   @media (max-width: $screen-md) {
     align-self: flex-start;
 
-    margin-top: 2px;
-    margin-right: 25px;
+    margin-top: 4px;
+    margin-right: 34px;
   }
 
   @media (max-width: $screen-sm) {
     margin: 0;
-    margin-left: 5px;
     margin-bottom: 23px;
+    padding-left: 8px;
   }
 }
 
@@ -76,6 +77,6 @@
   margin-left: auto;
 
   @media (max-width: $screen-md) {
-    margin-left: 0;
+    margin: 0;
   }
 }

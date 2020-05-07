@@ -1,16 +1,34 @@
 .social {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 
-  width: 10.2%;
+  width: 151px;
 
   @media (max-width: $screen-md) {
-    width: 92px;
+    width: 115px;
   }
 
   @media (max-width: $screen-sm) {
-    width: 90px;
+    width: 116px;
+  }
+}
+
+.social__item {
+  margin-right: 10px;
+  margin-left: 10px;
+
+  @media (max-width: $screen-md) {
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-right: 16px;
+    margin-left: 0;
+  }
+
+  &:hover {
+    opacity: 0.7;
   }
 }
 
@@ -21,7 +39,13 @@
   justify-content: center;
   align-items: center;
 
+  padding: 5px;
+
   cursor: pointer;
+
+  @media (max-width: $screen-sm) {
+    padding: 2px;
+  }
 }
 
 .social__link svg {
@@ -33,9 +57,5 @@
   @media (max-width: $screen-md) {
     width: 16px;
     height: 16px;
-  }
-
-  &:hover {
-    opacity: 0.7;
   }
 }

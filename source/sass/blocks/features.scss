@@ -62,8 +62,6 @@
 }
 
 .features__inner {
-  position: relative;
-
   margin: 0 auto;
   padding-right: 82px;
   padding-left: 82px;
@@ -83,10 +81,14 @@
 
 .features__inner h2 {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 31px;
   padding: 0;
 
   text-align: center;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 37px;
+  }
 
   @media (max-width: $screen-sm) {
     margin-bottom: 16px;
