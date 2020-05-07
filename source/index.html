@@ -67,11 +67,12 @@
       </section>
       <section class="description">
         <div class="description__inner">
-          <div class="description__text-block">
+          <div class="description__wrap">
+            <div class="description__text-block">
             <h2>Путешествие на край Земли</h2>
             <p>Это волшебное путешествие поможет вам познакомиться поближе&nbsp;<br>с удивительным миром Антарктики. Наш круизный лайнер отвезет вас&nbsp;<br>на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
-          </div>
-          <div class="description__img-wrap">
+            </div>
+            <div class="description__img-wrap">
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="img/description-img-sm@1x.webp, img/description-img-sm@2x.webp 2x">
               <source type="image/webp" media="(max-width: 1365px)" srcset="img/description-img-md@1x.webp, img/description-img-md@2x.webp 2x">
@@ -80,7 +81,33 @@
               <source media="(max-width: 1023px)" srcset="img/description-img-md@1x.jpg, img/description-img-md@2x.jpg 2x">
               <img src="img/description-img-lg@1x.jpg" srcset="img/description-img-lg@2x.jpg 2x" width="560" height="301" alt="Фото пингвинов">
             </picture>
+            </div>
           </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__inner">
+          <h2>Преимущества</h2>
+          <ul class="list-reset features__list">
+            <li class="features__item">
+              <div class="features__content features__content--liner">
+                <h3>Небольшой круизный&nbsp;лайнер</h3>
+                <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__content features__content--inclusive">
+                <h3>Система все&nbsp;включено</h3>
+                <p>Все наши круизы работают<br>по системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__content features__content--zodiac">
+                <h3>Экскурсионные туры на Zodiac</h3>
+                <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются<br>&nbsp;на оборудованных лодках типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -139,7 +166,10 @@
     </footer>
     <script src="js/vendor/picturefill.min.js"></script>
     <script src="js/vendor/object-fit/ofi.min.js"></script>
-    <script>objectFitImages();</script>
+    <script>
+    objectFitImages();
+
+    </script>
     <script src="js/main/menu.js"></script>
   </body>
 

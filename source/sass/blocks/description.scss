@@ -1,6 +1,6 @@
 .description {
   padding-top: 130px;
-  padding-bottom: 106px;
+  padding-bottom: 117px;
 
   @media (max-width: $screen-md) {
     padding-top: 91px;
@@ -9,28 +9,18 @@
 
   @media (max-width: $screen-sm) {
     padding-top: 58px;
-    padding-bottom: 60px;
+    padding-bottom: 62px;
   }
 }
 
 .description__inner {
-  display: flex;
-  flex-wrap: wrap;
-
   margin: 0 auto;
   padding-right: 105px;
   padding-left: 105px;
   width: 100%;
   max-width: 1366px;
 
-  @media (max-width: 1295px) {
-    flex-direction: column;
-    align-items: center;
-  }
-
   @media (max-width: $screen-md) {
-    flex-direction: row;
-
     padding-right: 45px;
     padding-left: 45px;
   }
@@ -40,6 +30,22 @@
 
     padding-right: 15px;
     padding-left: 15px;
+  }
+}
+
+.description__wrap {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: $screen-md) {
+    max-width: 1050px;
+  }
+
+  @media (max-width: $screen-sm) {
+    max-width: 100%;
   }
 }
 
@@ -59,7 +65,7 @@
   }
 
   @media (max-width: $screen-sm) {
-    margin-bottom: 33px;
+    margin-bottom: 27px;
     width: auto;
   }
 }
@@ -91,15 +97,10 @@
 }
 
 .description__img-wrap {
-  margin-top: 10px;
   margin-left: auto;
 
-  @media (max-width: 1295px) {
-    margin-left: 0;
-  }
-
   @media (max-width: $screen-md) {
-    margin-left: auto;
+    margin-top: 6px;
   }
 
   @media (max-width: $screen-sm) {

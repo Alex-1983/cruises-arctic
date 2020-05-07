@@ -52,7 +52,7 @@
     transition: top 0.3s 0.3s, transform 0.3s;
     transform-origin: 50% 50%;
 
-    background: $white-dark;
+    background-color: $white-dark;
   }
 
   &::before {
@@ -67,9 +67,9 @@
 .js .burger--close span {
   width: 85%;
 
-  transition: background 0.3s 0s;
+  transition: background-color 0.3s 0s;
 
-  background: transparent;
+  background-color: transparent;
 
   &::before,
   &::after {
@@ -80,7 +80,7 @@
 
     transition: top 0.3s, transform 0.3s 0.3s;
 
-    background: $blue-dark;
+    background-color: $blue-dark;
   }
 
   &::before {
