@@ -1,8 +1,10 @@
 .intro {
+  min-height: 638px;
+
   background-color: #003d79;
   background-image: url("../img/intro-bg-lg@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: bottom left;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -18,7 +20,10 @@
   }
 
   @media (max-width: $screen-md) {
+    min-height: 638px;
+
     background-image: url("../img/intro-bg-md@1x.jpg");
+    background-position: bottom 40% center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/intro-bg-md@2x.jpg");
@@ -34,8 +39,11 @@
   }
 
   @media (max-width: $screen-sm) {
+    min-height: 500px;
+
     background-image: url("../img/intro-bg-sm@1x.jpg");
-    background-position: top center;
+    background-position: bottom 30% center;
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/intro-bg-sm@2x.jpg");
@@ -122,6 +130,7 @@
 
   @media (max-width: $screen-sm) {
     padding-right: 60px;
+
     font-size: 16px;
     line-height: 1.4;
   }
