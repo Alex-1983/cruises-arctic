@@ -1,0 +1,106 @@
+.form__item {
+  margin-bottom: 20px;
+  width: 100%;
+
+  &--checkbox {
+    margin-bottom: 26px;
+  }
+}
+
+.form input {
+  display: inline-block;
+
+  padding: 14px 15px 13px;
+  width: 100%;
+
+  vertical-align: middle;
+
+  border: none;
+
+  @media (max-width: $screen-md) {
+    padding-top: 14px;
+    padding-bottom: 13px;
+  }
+}
+
+.form input::placeholder {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.form__item--checkbox label {
+  position: relative;
+
+  display: inline-block;
+
+  padding-left: 23px;
+
+  cursor: pointer;
+  vertical-align: top;
+
+  @media (max-width: $screen-sm) {
+    padding-left: 28px;
+    padding-right: 45px;
+    line-height: 10px;
+  }
+}
+
+.form__item--checkbox span {
+  font-size: 10px;
+  line-height: 1.3;
+
+  @media (max-width: $screen-sm) {
+    line-height: 1;
+  }
+}
+
+.form__item--checkbox input + span::before,
+.form__item--checkbox input + span::after {
+  content: "";
+  position: absolute;
+}
+
+.form__item--checkbox input + span::before {
+  top: 0;
+  left: 0;
+
+  width: 18px;
+  height: 18px;
+
+  background-color: $white-dark;
+
+  @media (max-width: $screen-sm) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.form__item--checkbox input:checked + span::after {
+  top: 5px;
+  left: 5px;
+
+  width: 9px;
+  height: 6px;
+
+  transform: rotate(-45deg);
+
+  border-bottom: 2px solid $blue-dark;
+  border-left: 2px solid $blue-dark;
+}
+
+.form__btn {
+  padding: 11px 10px 11px;
+  width: 303px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: $blue-dark;
+
+  @media (max-width: $screen-md) {
+    width: 100%;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

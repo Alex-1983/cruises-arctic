@@ -442,6 +442,43 @@
           </ul>
         </div>
       </section>
+      <section class="booking">
+        <div class="booking__inner">
+          <div class="booking__wrap">
+            <div class="booking__text-block">
+            <h2>Раннее бронирование</h2>
+            <p>Забронируйте тур<br>&nbsp;за 3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до 50%</p>
+            </div>
+            <div class="booking__form">
+            <p>Оставьте заявку<br>&nbsp;и мы свяжемся с вами в&nbsp;ближайшее время</p>
+            <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="form__item">
+              <label>
+                <input type="text" name="name" placeholder="Валерия" pattern="^([A-Za-zА-Яа-яЁё]+\s?'?-?)+$" autocomplete="on" required="">
+              </label>
+            </div>
+            <div class="form__item">
+              <label>
+                <input id="phone" type="tel" name="phone" placeholder="89236889975" autocomplete="on" required="">
+              </label>
+            </div>
+            <div class="form__item">
+              <label>
+                <input type="email" name="mail" placeholder="grishaewa.lera@gmail.com" pattern="[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" autocomplete="on" required="">
+              </label>
+            </div>
+            <div class="form__item form__item--checkbox">
+              <label>
+                <input class="visually-hidden" type="checkbox" name="checkbox" checked="">
+                <span>Я согласен на обработку моих персональных данных</span>
+              </label>
+            </div>
+            <button class="btn form__btn" type="submit">Оставить заявку</button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__inner">
@@ -498,11 +535,10 @@
     </footer>
     <script src="js/vendor/picturefill.min.js"></script>
     <script src="js/vendor/object-fit/ofi.min.js"></script>
-    <script>
-    objectFitImages();
-
-    </script>
+    <script src="js/vendor/i-mask.min.js"></script>
+    <script>objectFitImages();</script>
     <script src="js/main/menu.js"></script>
+    <script src="js/main/phone-mask.js"></script>
   </body>
 
 </html>

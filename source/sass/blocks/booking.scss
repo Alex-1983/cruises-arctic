@@ -1,0 +1,206 @@
+.booking {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  line-height: 1.5;
+
+  background-color: #a3cff9;
+  background-image: url("../img/booking-bg-lg@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/booking-bg-lg@2x.jpg");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/booking-bg-lg@1x.webp");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/booking-bg-lg@2x.webp");
+  }
+
+  @media (max-width: $screen-md) {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    min-height: 805px;
+
+    background-image: url("../img/booking-bg-md@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/booking-bg-md@2x.jpg");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/booking-bg-md@1x.webp");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/booking-bg-md@2x.webp");
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-top: 60px;
+    padding-bottom: 65px;
+    min-height: 760px;
+
+    background-image: url("../img/booking-bg-sm@1x.jpg");
+    background-position: top 30% left;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/booking-bg-sm@2x.jpg");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/booking-bg-sm@1x.webp");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/booking-bg-sm@2x.webp");
+    }
+  }
+}
+
+.booking__inner {
+  margin: 0 auto;
+  padding-right: 163px;
+  padding-left: 163px;
+  width: 100%;
+  max-width: 1366px;
+
+  @media (max-width: $screen-md) {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.booking__wrap {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $screen-md) {
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+    width: 62%;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: 100%;
+  }
+}
+
+.booking__text-block {
+  margin: 0;
+  margin-top: 163px;
+  padding: 0;
+  width: 493px;
+
+  @media (max-width: $screen-md) {
+    margin: 0;
+    margin-bottom: 51px;
+    padding: 0;
+    width: auto;
+
+    text-align: center;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 32px;
+  }
+}
+
+.booking__text-block h2 {
+  margin-bottom: 8px;
+
+  font-size: 40px;
+  font-weight: 700;
+
+  @media (max-width: $screen-md) {
+    font-size: 34px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 15px;
+
+    font-size: 24px;
+    line-height: 1.3;
+  }
+}
+
+.booking__text-block p {
+  padding-right: 145px;
+
+  font-size: 18px;
+
+  @media (max-width: $screen-md) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+.booking__text-block br {
+  display: none;
+
+  @media (max-width: $screen-sm) {
+    display: block;
+  }
+}
+
+.booking__form {
+  margin-left: auto;
+  padding: 50px;
+  padding-top: 44px;
+  width: 403px;
+
+  color: $white-dark;
+  background-color: $blue-dark;
+
+  @media (max-width: $screen-md) {
+    margin: 0 auto;
+    width: 95.87%;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin: 0 auto;
+    padding: 32px 30px 40px;
+    width: 100%;
+  }
+}
+
+.booking__form p {
+  margin-bottom: 27px;
+
+  font-size: 18px;
+  font-weight: 500;
+
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 25px;
+
+    text-align: center;
+  }
+}
+
+.booking__form br {
+  display: none;
+
+  @media (max-width: $screen-sm) {
+    display: block;
+  }
+}
