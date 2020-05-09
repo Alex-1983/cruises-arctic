@@ -126,10 +126,9 @@
   }
 
   @media (max-width: $screen-sm) {
-    width: 100%;
-
     padding-right: 0;
     padding-left: 0;
+    width: 100%;
     max-width: 100%;
   }
 }
@@ -138,19 +137,12 @@
   position: relative;
 
   padding: 82px 28px 26px;
-  min-height: 242px;
+  height: 100%;
 
   background-color: $white-dark;
 
   @media (max-width: $screen-md) {
     padding: 73px 16px 20px 19px;
-    min-height: 310px;
-  }
-
-  @media (max-width: $screen-sm) {
-    margin: 0;
-
-    min-height: 249px;
   }
 
   &::before {
