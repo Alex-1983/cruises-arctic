@@ -1,7 +1,7 @@
 {
-  "name": "cruises-arctic",
+  "name": "cruises-antarctic",
   "version": "1.0.0",
-  "description": "Личный проект «Круизы в Арктику» в Акселераторе",
+  "description": "Личный проект «Круизы в Антарктику» в Акселераторе",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
