@@ -16,6 +16,8 @@
   vertical-align: middle;
 
   border: none;
+  appearance: none;
+  border-radius: 0;
 
   @media (max-width: $screen-md) {
     padding-top: 14px;
@@ -99,12 +101,15 @@
   font-weight: 600;
   line-height: 1.5;
   color: $blue-dark;
+  outline: none;
+  appearance: none;
 
   @media (max-width: $screen-md) {
     width: 100%;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.7;
   }
 }

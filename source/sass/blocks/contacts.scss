@@ -124,7 +124,7 @@
   }
 
   @media (max-width: $screen-sm) {
-    margin-bottom: 37px;
+    margin-bottom: 17px;
     padding: 0;
     width: 100%;
   }
@@ -145,8 +145,12 @@
   }
 }
 
-.contacts__address p {
+.contacts__address {
   margin-bottom: 20px;
+}
+
+.contacts__address p {
+  margin: 0;
   padding-left: 28px;
 
   font-size: 16px;
@@ -182,6 +186,8 @@
 
   display: inline-block;
 
+  margin-bottom: 20px;
+  margin-right: 20px;
   padding-left: 30px;
 
   font-size: 16px;

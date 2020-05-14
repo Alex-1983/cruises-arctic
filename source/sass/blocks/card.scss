@@ -10,9 +10,8 @@
   font-weight: 500;
   line-height: 1.5;
 
-  cursor: pointer;
-
   color: $white-dark;
+  outline: none;
 
   @media (max-width: $screen-md) {
     padding: 35px;
@@ -149,14 +148,15 @@
   opacity: 0;
   color: $blue-dark;
   background-color: $white-dark;
+  cursor: pointer;
 
   @media (max-width: $screen-md) {
     width: 100%;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     opacity: 1;
+    background-color: rgba(249, 251, 253, 0.7);
   }
 }
 

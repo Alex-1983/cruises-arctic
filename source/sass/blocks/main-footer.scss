@@ -10,7 +10,7 @@
   max-width: 1366px;
 
   @media (max-width: $screen-md) {
-    padding: 46px 33px 48px;
+    padding: 46px 33px 44px;
   }
 
   @media (max-width: $screen-sm) {
@@ -67,7 +67,14 @@
 }
 
 .main-footer__list {
+  margin-top: 10px;
+
+  @media (max-width: $screen-md) {
+    margin-top: 5px;
+  }
+
   @media (max-width: $screen-sm) {
+    margin-top: 0;
     margin-bottom: 27px;
     margin-left: 3px;
   }

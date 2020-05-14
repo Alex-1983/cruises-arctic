@@ -84,24 +84,12 @@
   line-height: 1.5;
 }
 
-.description__text-block br {
-  display: none;
-
-  @media (max-width: $screen-md) {
-    display: block;
-  }
-
-  @media (max-width: $screen-sm) {
-    display: none;
-  }
-}
-
 .description__img-wrap {
   margin-left: auto;
 
   @media (max-width: $screen-md) {
     margin-top: 9px;
-    width: 48%;
+    width: 324px;
   }
 
   @media (max-width: $screen-sm) {
@@ -115,13 +103,8 @@
   width: 560px;
   height: 301px;
 
-  font-family: "object-fit: cover"; /*stylelint-disable*/
-
-  object-fit: cover;
-  object-position: center;
-
   @media (max-width: $screen-md) {
-    width: 100%;
+    width: 324px;
     height: 264px;
   }
 
