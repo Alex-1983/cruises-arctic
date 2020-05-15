@@ -1717,9 +1717,7 @@ input[type="radio"].visually-hidden {
   line-height: 1.5;
   color: #011c40;
   outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
+  background-color: rgba(249, 251, 253, 0.99); }
   @media (max-width: 1365px) {
     .form__btn {
       width: 100%; } }
